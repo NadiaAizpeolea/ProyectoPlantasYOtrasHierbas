@@ -1,10 +1,17 @@
+img{
+    height: 500px;
+    width: 960px;
+
+}
+
 .bienvenidos{
-    width: 75%;
-    padding-right: 10px;
+    width: 70%;
+    padding-right: 20px;
     box-sizing: border-box;
+    margin-right: 10px;
 }
 .testimonios{
-    width: 25%;
+    width: 30%;
 
 }
 .testimonio .cita{
@@ -24,4 +31,5 @@
 .columnas{
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }

@@ -17,6 +17,7 @@
 .persona img{
     border-radius: 50%;
     max-width: 60%;
+    max-height: 60%;
     box-shadow: 0 0 rgba(0, 0, 0, 0.5);
 }
 .persona h5,

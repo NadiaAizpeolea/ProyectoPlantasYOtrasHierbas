@@ -3,12 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from './components/layout/Header';
 import Nav from './components/layout/Nav';
-import Footer from './components/layout/Footer';
+import Footer from './components/layout/Footer.js';
 
 import ContactoPage from './pages/ContactoPage';
 import HomePage from './pages/HomePage';
-import Nosotros from './pages/NosotrosPage';
-import Novedades from './pages/NovedadesPage';
+import NosotrosPage from './pages/NosotrosPage';
+import NovedadesPage from './pages/NovedadesPage';
 import Galeria from './pages/Galeria';
 import PlantasInterior from './pages/PlantasInterior';
 import PlantasExterior from './pages/PlantasExterior';
@@ -30,7 +30,7 @@ function App() {
           <Route path="PlantasExterior" element={<PlantasExterior />}/>
         </Routes>
       </BrowserRouter>
-      <Footer />
+      <Footer/>
     </div>
   );
 }

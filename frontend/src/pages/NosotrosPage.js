@@ -1,3 +1,4 @@
+import React from 'react';
 import '../styles/components/pages/NosotrosPage.css';
 
 const NosotrosPage = (props) => {
@@ -30,7 +31,7 @@ const NosotrosPage = (props) => {
                         nam consequatur iure!</p>
                 </div>
                 <div class="persona">
-                    <img src="Img/Nosotros/nosotros2.jpg" alt="Leandro">
+                    <img src="Img/Nosotros/nosotros2.jpg" alt="Leandro"/>
                         <h5>Leandro Oliveri</h5>
                         <h4>Director de Operaciones</h4>
                         <p>Lorem ipsum dolor sit amet. Aut corporis corrupti et saepe asperiores id nihil officiis ex dolorem
@@ -39,7 +40,7 @@ const NosotrosPage = (props) => {
                             nam consequatur iure!</p>
                 </div>
                 <div class="persona">
-                    <img src="Img/Nosotros/nosotros3.jpg" alt="Malena">
+                    <img src="Img/Nosotros/nosotros3.jpg" alt="Malena"/>
                         <h5>Malena Oliveri</h5>
                         <h4>Directora Creativa</h4>
                         <p>Lorem ipsum dolor sit amet. Aut corporis corrupti et saepe asperiores id nihil officiis ex dolorem
@@ -48,7 +49,7 @@ const NosotrosPage = (props) => {
                             nam consequatur iure!</p>
                 </div>
                 <div class="persona">
-                    <img src="Img/Nosotros/nosotros4.jpg" alt="Matilda">
+                    <img src="Img/Nosotros/nosotros4.jpg" alt="Matilda"/>
                         <h5>Matilda Oliveri</h5>
                         <h4>Directora de entretenimiento</h4>
                         <p>Lorem ipsum dolor sit amet. Aut corporis corrupti et saepe asperiores id nihil officiis ex dolorem
@@ -57,7 +58,7 @@ const NosotrosPage = (props) => {
                             nam consequatur iure!</p>
                 </div>
                 <div class="persona">
-                    <img src="Img/Nosotros/nosotros5.jpg" alt="Josefa">
+                    <img src="Img/Nosotros/nosotros5.jpg" alt="Josefa"/>
                         <h5>Josefa "Mili" Prada</h5>
                         <h4>Asesora y donadora de ejemplares</h4>
                         <p>Lorem ipsum dolor sit amet. Aut corporis corrupti et saepe asperiores id nihil officiis ex dolorem
@@ -66,7 +67,7 @@ const NosotrosPage = (props) => {
                             nam consequatur iure!</p>
                 </div>
                 <div class="persona">
-                    <img src="Img/Nosotros/valki.jpg" alt="Valki">
+                    <img src="Img/Nosotros/valki.jpg" alt="Valki"/>
                         <h5>Valkiria Oliveri</h5>
                         <h4>Encargada de ronroneos</h4>
                         <p>Lorem ipsum dolor sit amet. Aut corporis corrupti et saepe asperiores id nihil officiis ex dolorem

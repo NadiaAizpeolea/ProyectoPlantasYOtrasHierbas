@@ -1,4 +1,4 @@
-import '../styles/components/pages/ContactoPageS.css';
+import '../styles/components/pages/ContactoPage.css';
 
 const ContactoPage = (props) => {
     return (
@@ -52,3 +52,5 @@ const ContactoPage = (props) => {
         </main>
     )
 }
+
+export default ContactoPage;

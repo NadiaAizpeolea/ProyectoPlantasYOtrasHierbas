@@ -1,6 +1,6 @@
+import React from 'react';
 import '../styles/components/pages/NovedadesPage.css';
 
-import React from "react";
 const NovedadesPage= (props)=>{
     return(
         <section className="holder">
