@@ -14,21 +14,3 @@ h2{
   font-weight: 400;
 }
 
-@media (max-width: 600px) {
-  body{
-  font-size: 12px;
-  line-height: 15px;
-  }
-  .holder{
-    max-width: 600px;
-  }
-}
-@media (max-width: 900px) {
-  body{
-    font-size: 14px;
-    line-height: 18px;
-    }
-    .holder{
-      max-width: 900px;
-  }
-  }
