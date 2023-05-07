@@ -6,15 +6,21 @@ var claudinary = require('cloudinary').v2;
 
 const uploader = util.promisify(claudinary.uploader.upload);
 
+router.get('/agregar', (req, res, next)=>{
+  res.render('admin/agregar',{
+    layout: 'admin/layout'
+  });
+  });
+
 /* GET novedades */
 router.get('/', async function (req, res, next){
   var novedades = await novedadesModel.getNovedades();
 
-  novedades = novedades.map(novedad =>{
-    if (novedad.img_id){
+  novedades = novedades.map(novedad => {
+    if (novedad.img_id) {
       const imagen = claudinary.image(novedad.img_id, {
-        width: 100,
-        height: 100,
+        width: 50,
+        height: 50,
         crop: 'fill'
       });
       return{
@@ -22,10 +28,11 @@ router.get('/', async function (req, res, next){
         imagen
       }
     } else{
+      return{
       ...novedad,
       imagen: ''
-    }
-  })
+    }}
+  });
 
   res.render('admin/novedades',{
     layout: 'admin/layout',
@@ -33,30 +40,25 @@ router.get('/', async function (req, res, next){
     novedades 
   });
 });
-router.get('/agregar', (req, res, next)=>{
-res.render('admin/agregar',{
-  layout: 'admin/layout'
-});
-});
+
+
 
 /*Agregar novedades*/
 
 router.post('/agregar', async (req, res, next) => {
   try{
-    var img_id='';
-    console.log(req.files.imagen);
-    if (req.files && Object.keys(req.files).length>0){
+    var img_id= '';
+    if (req.files && Object.keys(req.files).length > 0) {
       imagen = req.files.imagen;
       img_id = (await uploader (imagen.tempFilePath)).public_id;
-       }
-
-
-
-    if(req.body.titulo !="" && req.body.subtitulo!="" && req.body.cuerpo!=""){
+    }
+    
+    if(req.body.titulo !="" && req.body.subtitulo !="" && req.body.cuerpo !=""){
       await novedadesModel.insertNovedad({
         ...req.body,
           img_id    
       });
+
       res.redirect('/admin/novedades')
     } else {
       res.render('admin/agregar', {
@@ -65,11 +67,10 @@ router.post('/agregar', async (req, res, next) => {
       });
     }
   } catch(error){
-    console.log(error)
     res.render('admin/agregar', {
       layout: 'admin/layout',
       error: true, message:'no se ha podido cargar la novedad'
-    })
+    });
   }
 });
 
