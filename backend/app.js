@@ -67,7 +67,7 @@ app.use('/api', cors(), apiRouter);
 
 
 app.get('/', function (req,res) {
-  console.log('estoy aca app.js')
+  
   var conocido = Boolean (req.session.nombre);
   
   res.render('index',{

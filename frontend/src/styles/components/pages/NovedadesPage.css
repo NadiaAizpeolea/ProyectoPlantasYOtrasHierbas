@@ -1,4 +1,22 @@
 .novedades{
     color: darkolivegreen;
     border-bottom: 1px solid darkgreen;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.imagen{
+    height: 300;
+    width: 460;
+    border-radius: 10px;
+    display: block;
+}
+h2{
+    color: darkolivegreen;
+    font-size:x-large;
 }

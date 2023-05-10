@@ -1,6 +1,13 @@
+.homeimg {
+    display: block;
+    align-content: center;
+
+}
 .homeimg img{
     height: 500px;
     width: 960px;
+   
+    
 }
 
 .bienvenidos{
