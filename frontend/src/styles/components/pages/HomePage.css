@@ -1,8 +1,8 @@
-.homeimg {
-    display: block;
-    align-content: center;
-
+.holder{
+    max-width: 960px;
+    margin: 0 auto; 
 }
+
 .homeimg img{
     height: 500px;
     width: 960px;

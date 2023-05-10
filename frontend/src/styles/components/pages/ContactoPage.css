@@ -1,3 +1,4 @@
+
 .contacto{
     display: flex;
     gap: 24px;
@@ -10,6 +11,9 @@
 }
 .datos ul li{
     font-size: 13px;
+}
+form.formulario{
+    align-self: center;
 }
 .formulario p{
     display: flex;
