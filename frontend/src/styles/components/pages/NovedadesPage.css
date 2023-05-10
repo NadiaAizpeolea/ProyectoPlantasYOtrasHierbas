@@ -1,3 +1,6 @@
+
+
+
 .novedades{
     color: darkolivegreen;
     border-bottom: 1px solid darkgreen;
@@ -9,14 +12,19 @@
     gap: 32px;
     align-items: center;
     background-color: antiquewhite;
+   
 }
-.imagen{
+.novedades.img{
     height: 300;
     width: 460;
     border-radius: 10px;
-    display: block;
+    display: flex;
+    margin-right: auto;
+  
+
 }
 h2{
     color: darkolivegreen;
     font-size:x-large;
 }
+
