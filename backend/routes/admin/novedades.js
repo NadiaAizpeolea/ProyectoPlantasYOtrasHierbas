@@ -124,7 +124,7 @@ router.post('/modificar', async(req, res, next)=>{
     if (borrar_img_vieja && req.body.img_original){
       await (destroy(req.body.img_original));
     }
-    console.log(req.body);
+    
     let obj = {
       titulo: req.body.titulo,
       subtitulo: req.body.subtitulo,
